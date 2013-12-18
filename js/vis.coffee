@@ -60,4 +60,11 @@ $ ->
     L.geoJson(json, {filter:filterHoods,style:hoodStyle,onEachFeature:eachHood}).addTo(mapRegion)
 
   d3.json('data/hoods.json', displayHoods)
-  
+
+  displayBreweries = (csv) ->
+    csv.forEach (brewery) ->
+      if brewery.lat
+        L.marker([brewery.lat, brewery.lon]).addTo(mapLocations).bindPopup(brewery.name)
+
+ 
+  d3.csv('data/breweries.csv', displayBreweries)
