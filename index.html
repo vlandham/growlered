@@ -3,111 +3,121 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="js/vendor/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="js/vendor/leaflet/leaflet.css" />
 
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Growlered</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#" class="">Sign Up</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div> <!--/.container -->
-      </div> <!--/.navbar -->
-      <div class="jumbotron" id="landing_intro">
-        <h1>Growlered</h1>
-        <p class="lead">Fresh, local growlers delivered to your door every week.<br/>Proudly Serving Seattle Washington.</p> 
-      </div>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default" role="navigation">
       <div class="container">
-        <div class="row landing_directions">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Growlered</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a id="about_link" href="#about">About</a></li>
+            <li><a href="#" class="">Sign Up</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div> <!--/.container -->
+    </div> <!--/.navbar -->
+    <div class="jumbotron landing_intro" id="landing_intro">
+      <h1>Growlered</h1>
+      <p class="lead">Fresh, local growlers delivered to your door every week.<br/>Proudly Serving Seattle Washington.</p> 
+    </div>
+    <a name="about"></a>
+    <div id="about" class="landing_directions">
+      <div class="container">
+        <div class="row">
           <div class="col-md-4">
             <h2>Pick Your Favorite Growlers</h2>
-            <a href="#" class="thumbnail">
-              <img src="img/thumbnail.png">
-            </a>
+            <a href="#" class="thumbnail"><img src="img/bottles.png"></a>
             <p>Choose from your local favorites or try something new.</p>
           </div>
           <div class="col-md-4">
             <h2>Choose When You Want Them</h2>
-            <a href="#" class="thumbnail">
-              <img src="img/thumbnail.png">
-            </a>
+            <a href="#" class="thumbnail"><img src="img/time.png"></a>
             <p>Just once, once a week, or once a month</p>
           </div>
           <div class="col-md-4">
             <h2>We Deliver Them To Your Door</h2>
-            <a href="#" class="thumbnail">
-              <img src="img/thumbnail.png">
-            </a>
+            <a href="#" class="thumbnail"><img src="img/delivery.png"></a>
             <p>Fresh growlers arrive at your door. Magic!</p>
           </div>
         </div>
-        <div class="row landing_signup">
-          <div class="col-md-12">
-            <a href="#" class="btn btn-primary btn-lg">Sign Up Now!</a>
+      </div>
+      <div class="landing_signup">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-12">
+              <a href="#" class="btn btn-primary btn-lg">Sign Up Now!</a>
+            </div>
           </div>
         </div>
       </div>
-        <div id="landing_locations" class="row landing_map">
-          <h2>Our Growlers Come From All Over Seattle</h2>
-          <div id="locations_map" class="map"></div>
+      <div class="row landing_map landing_locations">
+        <h2>Get Growlers From All Over Seattle</h2>
+        <div id="locations_map" class="map"></div>
+      </div>
+      <div class="row landing_map landing_regions">
+        <h2>We Deliver to A Number of Neighborhoods</h2>
+        <div id="region_map" class="map"></div>
+        <div class="container">
+          <div class="row">
+            <p>Right now we want to give you the best experience possible, by focusing on a few neighborhoods to make sure we get things right.</p>
+            <p>Want us in your neighborhood? <a href="contact">Let Us Know!</a>.</p>
+          </div>
+          <div class="row">
+          </div>
         </div>
-        <div id="landing_regions" class="row landing_map">
-          <h2>We Deliver to A Number of Neighborhoods</h2>
-          <div id="region_map" class="map"></div>
-        </div>
-        <div id="footer">
-        </div>
-      
+      </div>
+      <div id="footer">
+        <p>Growlered.com</p>
+      </div>
+
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-          <script src="js/vendor/coffee-script.js"></script>
-          <script src="js/vendor/leaflet/leaflet.js"></script>
-          <script src="js/vendor/d3.v3.min.js"></script>
-          <script src="js/vendor/queue.min.js"></script>
-          <script type="text/coffeescript" src="js/vis.coffee"></script>
-          
+        <script src="js/vendor/coffee-script.js"></script>
+        <script src="js/vendor/leaflet/leaflet.js"></script>
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+        <script src="js/vendor/d3.v3.min.js"></script>
+        <script src="js/vendor/queue.min.js"></script>
+        <script type="text/coffeescript" src="js/vis.coffee"></script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+          ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-    </body>
-</html>
+      </body>
+    </html>
