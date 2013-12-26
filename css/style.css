@@ -17,13 +17,14 @@ p {
 .jumbotron h1 {
   text-shadow: 3px 3px 1px #c4c5c5;
   /* font-size: 72px; */
-  font-size: 5.2vw;
-  padding-left: 5.0vw;
+  font-size: 6.2vw;
+  padding-left: 10.0vw;
+  /* background-color:rgba(0, 0, 0, 0.5); */
 }
 
 .jumbotron p {
   /* padding-left: 320px; */
-  padding-left: 5.0vw;
+  padding-left: 10.0vw;
 }
 
 #landing_intro {
