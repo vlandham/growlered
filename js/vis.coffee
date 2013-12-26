@@ -30,7 +30,8 @@ $ ->
   # }).addTo(mapLocations)
   l = new L.StamenTileLayer("toner").addTo(mapLocations)
 
-  # mapLocations.dragging.disable()
+  if  Modernizr.touch
+    mapLocations.dragging.disable()
   mapLocations.touchZoom.disable()
   mapLocations.doubleClickZoom.disable()
   mapLocations.scrollWheelZoom.disable()
@@ -43,7 +44,9 @@ $ ->
   # }).addTo(mapRegion)
   l = new L.StamenTileLayer("toner").addTo(mapRegion)
 
-  # mapRegion.dragging.disable()
+  if  Modernizr.touch
+    mapRegion.dragging.disable()
+
   mapRegion.touchZoom.disable()
   mapRegion.doubleClickZoom.disable()
   mapRegion.scrollWheelZoom.disable()
