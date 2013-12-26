@@ -37,6 +37,10 @@ p {
 h2 {
   font-family: 'Belgrano', serif;
   color: #616161;
+
+  /* border-bottom: 1px solid silver; */
+  padding: 0 30px;
+  margin: 0 auto 15px;
 }
 
 .landing_directions {
@@ -46,6 +50,10 @@ h2 {
 
 .landing_intro {
   min-height: 400px;
+}
+
+.top_btn {
+  margin-top: 50px;
 }
 
 .landing_signup {
