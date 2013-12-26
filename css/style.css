@@ -18,11 +18,12 @@ p {
   text-shadow: 3px 3px 1px #c4c5c5;
   /* font-size: 72px; */
   font-size: 5.2vw;
-  padding-left: 320px;
+  padding-left: 5.0vw;
 }
 
 .jumbotron p {
-  padding-left: 320px;
+  /* padding-left: 320px; */
+  padding-left: 5.0vw;
 }
 
 #landing_intro {
