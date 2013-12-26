@@ -8,6 +8,37 @@ p {
   background-color: transparent;
 }
 
+.logo {
+  font-family: 'Belgrano', serif;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.jumbotron h1 {
+  text-shadow: 3px 3px 1px #c4c5c5;
+  font-size: 72px;
+  padding-left: 320px;
+}
+
+.jumbotron p {
+  padding-left: 320px;
+}
+
+#landing_intro {
+  background-image:url('../img/growler_girl_small.png');
+  background-repeat:no-repeat;
+  background-color:#F8F8F5;
+}
+
+.top_banner {
+  /* background-color:#F8F8F5; */
+}
+
+h2 {
+  font-family: 'Belgrano', serif;
+  color: #616161;
+}
+
 .landing_directions {
   text-align: center;
   /* min-height: 300px; */
@@ -29,8 +60,9 @@ p {
 
 .map {
   width: 100%;
-  height: 280px;
-  height: 715px;
+  /* height: 280px; */
+  /* height: 715px; */
+  height: 500px;
   position: relative;
   z-index: 3;
   margin-bottom: 20px;
