@@ -4,7 +4,16 @@ apiKey = "088d3df822cb4b33b9d95e9cedf889a5"
 # seattle = [47.60620950083183, -122.3320707975654]
 seattle = [47.66, -122.3320707975654]
 
+setupThumbs = () ->
+  # s = Snap("#thumb_bottles")
+  # Snap.load "img/growler.svg", (f) ->
+  #   f.selectAll("#path3")
+  #   f.attr("width", 200)
+  #   s.append(f)
+
 $ ->
+  setupThumbs()
+
   $("#about_link").on 'click', (e) ->
     e.preventDefault()
     $('.navbar li').removeClass("active")

@@ -16,7 +16,8 @@ p {
 
 .jumbotron h1 {
   text-shadow: 3px 3px 1px #c4c5c5;
-  font-size: 72px;
+  /* font-size: 72px; */
+  font-size: 5.2vw;
   padding-left: 320px;
 }
 
@@ -32,6 +33,11 @@ p {
 
 .top_banner {
   /* background-color:#F8F8F5; */
+}
+
+.thumb {
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 h2 {
